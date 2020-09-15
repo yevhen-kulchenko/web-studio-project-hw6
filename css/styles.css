@@ -33,7 +33,6 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /*outline: 1px solid tomato;*/
 }
 .list {
     padding: 0;
@@ -313,6 +312,7 @@ img {
     display: flex;
     flex-direction: column;
     position: relative;
+    text-align: left;
     margin-bottom: 10px;
     font-style: normal;
     font-weight: normal;
@@ -330,7 +330,6 @@ img {
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline: none;
 }
 .form-icon {
     position: absolute;
@@ -345,7 +344,6 @@ img {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline: none;
     padding: 12px 16px;
 }
 .input-form:focus {
@@ -359,6 +357,36 @@ img {
 .form-comment:focus {
     border-color: var(--accent-color);
     transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dealbox {
+    margin-top: 10px;
+}
+.dealbox > span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.deal-link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+.deal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* features */
@@ -624,7 +652,6 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form .mail:hover,
