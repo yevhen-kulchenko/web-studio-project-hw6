@@ -359,9 +359,37 @@ img {
     transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dealbox {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
 }
-.dealbox > span {
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.deal-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    background-size: contain;
+    background-origin: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .deal-icon {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+.deal-text {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
