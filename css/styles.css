@@ -354,6 +354,9 @@ img {
     fill: var(--accent-color);
     transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-form:hover {
+    cursor: pointer;
+}
 .form-comment:focus {
     border-color: var(--accent-color);
     transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
